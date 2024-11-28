@@ -1,0 +1,1136 @@
+/* Обнуление стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили */
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1020px;
+    margin: 0 auto;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+.slider {
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.slider img {
+    height: 1000px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* Стили для баннера */
+.banner_yellow {
+    position: absolute;
+    top: 54rem;
+    left: 60%;
+    background-color: #F8F200;
+    padding: 10px 20px;
+    text-align: center;
+    width: 624px;
+    height: 369px;
+    -webkit-transform: translateX(-80px) translateY(-230px);
+    /* Для  Safari */
+    -moz-transform: translateX(-80px) translateY(-230px);
+    /* Для Firefox */
+    -ms-transform: translateX(-80px) translateY(-230px);
+    /* Для IE  */
+    -o-transform: translateX(-80px) translateY(-230px);
+    /* Для Opera */
+    transform: translateX(-80px) translateY(-230px);
+    clip-path: polygon(8% 0, 100% 0, 100% 0, 100% 86%, 92% 100%, 0 100%, 0 100%, 0 15%);
+    padding: 70px 70px 80px 70px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.banner_yellow p {
+    margin: 0;
+    font-size: clamp(30px, 6vw, 63px);
+    line-height: 62px;
+    color: black;
+
+}
+
+.banner_yellow a {
+    margin-top: 10%;
+    text-decoration: none;
+    color: #F8F200;
+    width: 272px;
+    background: #000;
+    font-size: clamp(18px, 6vw, 24px);
+    font-weight: 700;
+
+    padding: 8px 10px;
+    line-height: 40px;
+}
+
+/* end */
+.game_description {
+    max-width: 1280px;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    margin: auto;
+
+}
+
+h1 {
+    font-size: clamp(30px, 6vw, 63px);
+    line-height: 63px;
+    font-weight: 400;
+    font-family: "Archangelsk", "Roboto";
+
+}
+
+.game_description span {
+    color: rgb(82, 190, 220);
+    font-family: "Archangelsk", "Roboto";
+}
+
+.game_description p {
+    width: 952px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: rgb(119, 119, 119);
+    font-family: "Roboto";
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 30px;
+    margin-top: 70px;
+
+}
+
+.grid-container img:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.grid-container img:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.grid-container img:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.section-fon {
+    margin-top: 70px;
+    background-image: url('img/333.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40px;
+}
+
+.section-fon2 {
+
+    background-image: url('img/3331.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 40px;
+}
+
+.wrapper {
+    background: #000;
+}
+
+/* -----form section */
+.container {
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    /* Три строки */
+    gap: 20px;
+    /* Промежуток между блоками */
+    padding: 70px;
+
+}
+
+.iconSale {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* Две колонки: логотип и заголовок */
+    align-items: center;
+    gap: 20px;
+    /* Промежуток между логотипом и заголовком */
+}
+
+.iconSale img {
+    width: 50px;
+    /* Размер логотипа */
+    height: auto;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.form-and-image {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    /* Две колонки: форма и картинка */
+    align-items: center;
+    gap: 10px;
+    /* Промежуток между формой и картинкой */
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 460px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.descriptionText {
+    width: 952px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+
+    text-align: left;
+    color: #fff;
+
+}
+
+.descriptionText span {
+    color: rgb(82, 190, 220);
+    font-family: "Archangelsk", "Roboto";
+}
+
+.form-and-image img {
+    width: 788px;
+    height: 456px;
+
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: "Archangelsk", "Roboto";
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 63px;
+
+    text-align: left;
+}
+
+.iconSale img {
+    width: 132px;
+    height: auto;
+}
+
+
+.file-input-wrapper {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    color: #fff;
+    font-size: 16px;
+    width: 460px;
+    height: 100px;
+}
+
+
+
+
+.file-input-wrapper input[type="file"] {
+    /* opacity: 0; */
+    display: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.file-input-wrapper {
+    position: relative;
+
+    padding: 10px;
+    border: 1px dashed #fff;
+    color: #fff;
+    font-size: 16px;
+}
+
+.file-input-wrapper .text {
+    display: block;
+}
+
+.file-input-wrapper .text:first-child {
+    text-decoration: underline;
+}
+
+
+
+form input:nth-of-type(1),
+form input:nth-of-type(2),
+form input:nth-of-type(3) {
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    /* Убираем контур при фокусе */
+    background: none;
+    /* Убираем фон */
+    padding: 10px;
+    margin: 0;
+    /* Убираем отступы */
+    font-family: inherit;
+    /* Наследуем шрифт */
+    font-size: inherit;
+    /* Наследуем размер шрифта */
+    color: inherit;
+
+    box-sizing: border-box;
+
+}
+
+input::placeholder {
+    color: #fff;
+
+}
+
+.btnY {
+    background-color: #F8F200;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 30px;
+    font-family: " Roboto";
+
+    font-weight: 700;
+    line-height: 21px;
+
+    text-align: center;
+    width: 192px;
+    height: 60px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.checkbox-text {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.yellowBlock {
+    width: 1920px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: yellow;
+    /* Для наглядности */
+    display: flex;
+    justify-content: center;
+}
+
+.innerBlock {
+    width: 624px;
+    height: auto;
+    background-color: transparent;
+    /* Для наглядности */
+    margin: auto;
+    margin-top: 70px;
+}
+
+.btnX {
+
+    background-color: #000;
+    color: #F8F200;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 50px;
+    font-family: "Roboto";
+
+    font-weight: 700;
+    line-height: 21px;
+
+    text-align: center;
+    width: 192px;
+    height: 60px;
+    text-decoration: none;
+}
+
+.innerBlock h3 {
+    color: rgb(0, 0, 0);
+    font-family: "Archangelsk";
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 63px;
+
+    text-align: left;
+}
+
+.innerBlock p {
+    color: rgb(0, 0, 0);
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+
+    text-align: left;
+}
+
+.innerBlock ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+.innerBlock ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+
+    text-align: left;
+}
+
+.innerBlock ul li img {
+    margin-right: 10px;
+    width: 24px;
+
+    height: 24px;
+
+}
+
+/* gameby block */
+.byGameWrapper {
+    width: 1920px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.leftBlock,
+.rightBlock {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.leftBlock {
+    /* height: 100%; */
+    overflow: hidden;
+}
+
+.leftBlock img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rightBlock {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightBlock h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.rightBlock p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.listOptions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listOptions li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.listOptions li img {
+    width: 24px;
+    /* Размер иконок */
+    height: 24px;
+    /* Размер иконок */
+    margin-right: 10px;
+    /* Отступ между иконкой и текстом */
+}
+
+
+.platformGame {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.platformGame a {
+    width: 48%;
+    /* 48% ширины родительского блока для двух элементов в строке */
+    margin-bottom: 10px;
+    /* Отступ между строками */
+    display: flex;
+    /* Добавляем flex для выравнивания изображений */
+}
+
+.platformGame img {
+    /* width: 100%; */
+    height: 30px;
+    /* Фиксированная высота для изображений */
+    object-fit: contain;
+    /* Сохраняем пропорции изображений */
+    display: block;
+    /* Убираем лишние отступы под изображением */
+    align-self: flex-start;
+    /* Прижимаем изображения к началу блока */
+}
+
+.rightBlock>h3 {
+    width: 624px;
+    color: #fff;
+    font-family: "Archangelsk";
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 63px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.descriptionTextGame,
+.OptionsTextGame {
+    color: rgb(82, 190, 220);
+    font-family: "Archangelsk", "Roboto";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+.imageBlock{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_links {
+    width: 1280px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px 0; */
+    box-sizing: border-box;
+}
+
+.left_images {
+    display: flex;
+    align-items: center;
+}
+
+.left_images img {
+    margin-right: 10px;
+}
+
+.right_links {
+    display: flex;
+    align-items: center;
+}
+
+.right_links a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.copyr {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.copyr p {
+    margin: 0;
+}
+
+/* ---------------------------------- */
+/* ---------------------------------- */
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+
+
+
+    }
+
+    header {
+        width: 100%;
+        display: block;
+    }
+
+    header .logo,
+    .social-icons {
+        text-align: center;
+    }
+
+    .slider img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+
+    }
+
+    .banner_yellow {
+        position: absolute;
+        top: 64rem;
+        left: 18%;
+        background-color: #F8F200;
+        padding: 10px 20px;
+        text-align: center;
+        width: 102%;
+        height: auto;
+        -webkit-transform: translateX(-80px) translateY(-230px);
+        -moz-transform: translateX(-80px) translateY(-230px);
+        -ms-transform: translateX(-80px) translateY(-230px);
+        -o-transform: translateX(-80px) translateY(-230px);
+        transform: translateX(-80px) translateY(-230px);
+        clip-path: polygon(8% 0, 100% 0, 100% 0, 100% 86%, 92% 100%, 0 100%, 0 100%, 0 15%);
+        padding: 0;
+        /* display: flex; */
+        flex-wrap: wrap;
+    }
+
+    .banner_yellow p {
+        margin: 0;
+        font-size: clamp(22px, 6vw, 63px);
+        line-height: 62px;
+        color: black;
+        width: 100%;
+    }
+
+    .banner_yellow a {
+        margin-top: 10%;
+        text-decoration: none;
+        color: #F8F200;
+        width: 272px;
+        background: #000;
+        font-size: clamp(18px, 6vw, 24px);
+        font-weight: 700;
+        padding: 8px 10px;
+        line-height: 40px;
+        margin: auto;
+        margin-bottom: 33px;
+    }
+
+    .game_description {
+        width: 100%;
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 34px;
+        margin: auto;
+        padding-left: 12px;
+    }
+
+    .game_description p {
+        width: 100%;
+
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Одна колонка */
+        gap: 20px;
+        /* Уменьшаем отступы */
+        margin-top: 40px;
+        /* Уменьшаем верхний отступ */
+    }
+
+    .grid-container img:nth-child(1) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 100%;
+    }
+
+    .grid-container img:nth-child(2) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        display: none;
+    }
+
+    .grid-container img:nth-child(3) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        width: 100%;
+    }
+
+    .yellowBlock {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: yellow;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .innerBlock {
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 20px;
+        padding: 12px;
+        
+        /* margin-bottom: 70px; */
+    }
+
+    .innerBlock h3 {
+        font-size: 33px;
+    }
+
+    .byGameWrapper {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .leftBlock,
+    .rightBlock {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .info_links {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* padding: 20px 0; */
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+
+    .left_images {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .right_links {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 103px;
+        background: rgb(230, 230, 230);
+        justify-content: center;
+    }
+
+    .pcImage {
+        width: 100%;
+
+    }
+
+    .descriptionText {
+        width: 100%;
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 34px;
+        margin: auto;
+        text-align: left;
+        color: #fff;
+        padding-left: 12px;
+        margin-bottom: 20px;
+
+    }
+
+    .descriptionText p {
+        width: 100%;
+    }
+
+    .file-input-wrapper {
+        position: relative;
+        padding: 10px;
+        border: 1px dashed #fff;
+        color: #fff;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .form-and-image {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .form-and-image img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .clear {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+
+    }
+
+    .noner {
+        display: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        padding: 70px;
+    }
+
+    .container h2 {
+        padding-left: 12px;
+    }
+
+    .rightBlock>h3 {
+        width: 100%;
+        color: #fff;
+        font-family: "Archangelsk";
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .iconSale {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .iconSale img {
+        width: 62px;
+        height: auto;
+    }
+
+
+
+    .form-and-image {
+        grid-template-columns: 1fr;
+    }
+
+    .form-and-image img {
+        order: -1;
+        /* Перемещаем картинку наверх */
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    .btnY {
+        margin-top: 10px;
+    }
+
+    form input:nth-of-type(1),
+    form input:nth-of-type(2),
+    form input:nth-of-type(3) {
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: none;
+        padding: 10px;
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        box-sizing: border-box;
+        width: 100%;
+    }
+   .oneIM{
+    width: 40px;
+    height: 40px;
+   }
+   .twoIM{
+    width: 60px;
+    height: 60px;
+   }
+   .threeIM{
+    width: 200px;
+    height: 40px;
+   }
+   .imageBlock {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    align-items: center;
+  
+}
+  
+   
+
+}
+
+/* --------tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+        border: 1px solid red;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+
+        z-index: 1;
+        padding: 20px;
+    }
+    .banner_yellow {
+        position: absolute;
+        top: 54rem;
+        left: 45%;
+        background-color: #F8F200;
+        padding: 10px 20px;
+        text-align: center;
+        width: 624px;
+        height: 369px;
+        -webkit-transform: translateX(-80px) translateY(-230px);
+        -moz-transform: translateX(-80px) translateY(-230px);
+        -ms-transform: translateX(-80px) translateY(-230px);
+        -o-transform: translateX(-80px) translateY(-230px);
+        transform: translateX(-80px) translateY(-230px);
+        clip-path: polygon(8% 0, 100% 0, 100% 0, 100% 86%, 92% 100%, 0 100%, 0 100%, 0 15%);
+        padding: 70px 70px 80px 70px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imageBlock {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    .oneIM{
+        width: 80px;
+        height: 80px;
+       }
+       .twoIM{
+        width: 90px;
+        height: 20px;
+       }
+       .threeIM{
+        width: 320px;
+        height: 80px;
+       }
+       /* ------ */
+       .grid-container {
+        grid-template-columns: 3fr;
+        /* Одна колонка */
+        gap: 20px;
+        /* Уменьшаем отступы */
+        margin-top: 40px;
+        /* Уменьшаем верхний отступ */
+    }
+
+    .grid-container img:nth-child(1) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        /* width: 100%; */
+    }
+
+    .grid-container img:nth-child(2) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        display: none;
+    }
+
+    .grid-container img:nth-child(3) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        width: 100%;
+    }
+    .form-and-image img {
+        width: 100%;
+        height: auto;
+    }
+    .rightBlock>h3 {
+        width: 100%;
+       
+    }
+    /* .leftBlock img {
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+    } */
+    .rightBlock {
+      
+        width: 70%;
+    }
+    .info_links {
+        width: 1280px;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        /* padding: 20px 0; */
+        box-sizing: border-box;
+    }
+    .pcImage{
+        width: 90%;
+    }
+    .innerBlock{
+        padding: 20px;
+    }
+}
